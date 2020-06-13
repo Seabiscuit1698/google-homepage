@@ -3,20 +3,36 @@
 
 <style>
     a {
-        color: black;
+        color: rgb(73, 73, 73);
         font-size: larger;
         font-style: normal;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
     }
     body {
-        max-width: 100vw;
-        max-height: auto;
+        margin: 15px;
+        border: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin: 10px;
+        font-size: small;
     }
     #right-nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 220px;
+        width: 300px;
+        justify-self: end;
+        margin-right: 20px;
     }
     #left-nav {
         display: flex;
@@ -24,6 +40,8 @@
         align-items: center;
         justify-content: space-between;
         width: 105px;
+        justify-self: start;
+        margin-left: 30px;
     }
     #sign-in-button {
         background-color: blue;
@@ -31,23 +49,54 @@
         border-radius: 5px;
         padding: 5px 10px;
         margin: 0;
+        border-color: blue;
     }
     .main-section {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        margin-top: 150px;
     }
     #google-logo {
-        max-width: 100%;
+        width: 300px;
         height: auto;
+        align-self: center;
+        margin-bottom: 30px;
     }
     #searchbar {
         justify-self: center;
-        width: 20vw;
+        width: 30vw;
+        height: 40px;
         align-self: center;
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+    .function-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 15vw;
+        align-self: center;
+        margin-bottom: 32em;
+    }
+    #search-button {
+        background-color: lightgray;
+        color:rgb(73, 73, 73);
+        padding: 5px 15px;
+    }
+    #lucky-button {
+        background-color: lightgray;
+        color:rgb(73, 73, 73);
+        padding: 5px 15px;
     }
     footer {
         background-color: lightgray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 5px 20px;
+        top: 5px;
     }
     #left-footer {
         display: flex;
@@ -55,6 +104,7 @@
         align-items: center;
         justify-content: space-between;
         width: 350px;
+        margin-left: 20px;
     }
     #right-footer {
         display: flex;
@@ -82,6 +132,10 @@
 <div class="main-section">
         <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
         <input id="searchbar" type="search">
+        <div class="function-buttons">
+            <button type="button" id="search-button">Google Search</button>
+            <button type="button" id="lucky-button">I'm Feeling Lucky</button>
+        </div>
 </div>
 
 <footer>

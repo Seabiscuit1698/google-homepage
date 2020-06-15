@@ -18,14 +18,18 @@
         text-align: center;
     }
     nav {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
+        position: fixed;
+        align-content: stretch;
         justify-content: space-between;
+        width: 100%;
         margin: 10px;
         font-size: small;
+        top: 0;
+        left: 0;
+        margin-top: 20px;
     }
     #right-nav {
+        float: right;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -35,6 +39,7 @@
         margin-right: 20px;
     }
     #left-nav {
+        float: left;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -55,7 +60,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        margin-top: 150px;
+        margin-top: 200px;
         width: 100%;
     }
     #google-logo {
@@ -78,7 +83,7 @@
         justify-content: space-between;
         width: 15vw;
         align-self: center;
-        margin-bottom: 32em;
+        margin-bottom: 31em;
     }
     #search-button {
         background-color: lightgray;
@@ -92,26 +97,30 @@
     }
     footer {
         background-color: lightgray;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 98%;
-        padding-left: 15px;
-        padding-right: 20px;
+        position: fixed;
+        align-items: stretch;
+        width: 100%;
+        padding: 0;
+        bottom: 0;
+        left: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     #left-footer {
+        float: left;
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 350px;
+    }
+    #left-footer a {
+        padding: 10px 0px 10px 15px;
     }
     #right-footer {
+        float: right;
         display: flex;
         flex-direction: row;
-        align-content: center;
-        justify-content: space-between;
-        width: 210px;
+    }
+    #right-footer a {
+        padding: 10px 15px 10px 0px;
     }
 </style>
 
